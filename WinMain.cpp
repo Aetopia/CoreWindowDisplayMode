@@ -68,19 +68,6 @@ static BOOL IsWindowBandDesktop(HWND hWnd)
     return dwBand == 1;
 }
 
-static PCWSTR GetWindowAppUserModelId(HWND hWnd)
-{
-    PROPVARIANT pvAppUserModelId = {};
-    IPropertyStore *pProperties = NULL;
-
-    if (SUCCEEDED(SHGetPropertyStoreForWindow(hWnd, IID_IPropertyStore, (void **)&pProperties)))
-    {
-        pProperties->GetValue(PKEY_AppUserModel_ID, &pvAppUserModelId);
-        pProperties->Release();
-    }
-    return pvAppUserModelId.pwszVal;
-}
-
 static BOOL EnumWindowsProc(HWND hwnd, LPARAM lParam)
 {
     PROPVARIANT pvAppUserModelId = {};
