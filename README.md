@@ -21,12 +21,7 @@ Run any UWP app that uses a [core window](https://learn.microsoft.com/en-us/uwp/
     Settings: windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel
     ```
 
-2. Copy the App User Model ID for an UWP app:<br>
-    -  The highlighted text represents the App User Model ID.<br>
-
-        <code>
-        Settings: <mark>windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel</mark>
-        </code>
+2. Copy the App User Model ID for an UWP app.
 
 3. Download the latest release from [GitHub Releases](https://github.com/Aetopia/CoreWindowDisplayMode/releases/latest).
 
