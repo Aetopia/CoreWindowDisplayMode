@@ -19,7 +19,7 @@ static VOID SetDisplayMode(BOOL fSet)
 
     if (!fSet)
     {
-        ChangeDisplaySettingsExW(NULL, NULL, NULL, 0, NULL);
+        ChangeDisplaySettingsExW(mi.szDevice, NULL, NULL, CDS_FULLSCREEN, NULL);
         return;
     }
 
